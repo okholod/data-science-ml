@@ -1,6 +1,6 @@
-#Data Science, Machine Learning, and Deep Learning Courses
+# Data Science, Machine Learning, and Deep Learning Courses
 
-##Что я пробовал сам
+## Что я пробовал сам
 
 **Machine Learning Specialization** 
 https://www.coursera.org/specializations/machine-learning
@@ -42,7 +42,7 @@ https://cognitiveclass.ai/learn/deep-learning/
 Сейчас в процессе. Первые два курса скорее обзорные, но рассматривают разные не столь популярные штуки 
 как Deep Belief Network или Restricted Boltzmann Machine.
 
-##Что рекомендуют "собаководы"
+## Что рекомендуют "собаководы"
 
 **Машинное обучение и анализ данных Specialization**
 https://www.coursera.org/specializations/machine-learning-data-analysis
@@ -75,7 +75,7 @@ http://course.fast.ai/
 
 2 курса по Deep Learning.
 
-##Что еще выглядит интересно
+## Что еще выглядит интересно
 
 **Machine Learning with TensorFlow on Google Cloud Platform Specialization** 
 https://www.coursera.org/specializations/machine-learning-tensorflow-gcp
