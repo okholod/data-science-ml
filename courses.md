@@ -17,14 +17,14 @@ https://www.coursera.org/learn/data-manipulation
 **Deep Learning Specialization**
 https://www.coursera.org/specializations/deep-learning
 
-Специализация по Deep Learning от Andrew Ng. Фундаментально и классно. Я прошел 4 курса, 5 еще не был тошда доступен, 
+Специализация по Deep Learning от Andrew Ng. Фундаментально и классно. Я прошел 4 курса, 5 еще не был тогда доступен, 
 но пройду обязательно.
 
 **Advanced Data Science with IBM Specialization**
 https://www.coursera.org/specializations/advanced-data-science-ibm
 
 Сейчас в процессе. Сочетает достаточно глубокое раскрытие одних тем, с весьма обзорным форматом других.
-Из полезного: интересные практические примеры, плюс информация о том, как различные фреймворки испольховать в IBM Cloud 
+Из полезного: интересные практические примеры, плюс информация о том, как различные фреймворки использовать в IBM Cloud 
 и Watson Studio.
 
 **IBM Data Science Professional Certificate**
