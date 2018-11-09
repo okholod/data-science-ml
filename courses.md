@@ -2,32 +2,32 @@
 
 ## Что я пробовал сам
 
-**Machine Learning Specialization** 
+**Machine Learning Specialization**  
 https://www.coursera.org/specializations/machine-learning
 
 Специализация с интересными и "энергичными" курсами. Я прошел первый - он дает хороший обзор областей применения 
 Machine Learning. В курсах используется пакет Dato GraphLab.
 
-**Data Manipulation at Scale: Systems and Algorithms Specialization**
+**Data Manipulation at Scale: Systems and Algorithms Specialization**  
 https://www.coursera.org/learn/data-manipulation
 
 Прошел первых два курса, они скорее теоретические, много математики и подходов "издалека", но мне как раз этим понравились. 
 Из неожиданного были практические задания на R, хотя он не был упомянут в аннотации. Пришлось быстренько освоить. :)
 
-**Deep Learning Specialization**
+**Deep Learning Specialization**  
 https://www.coursera.org/specializations/deep-learning
 
 Специализация по Deep Learning от Andrew Ng. Фундаментально и классно. Я прошел 4 курса, 5 еще не был тогда доступен, 
 но пройду обязательно.
 
-**Advanced Data Science with IBM Specialization**
+**Advanced Data Science with IBM Specialization**  
 https://www.coursera.org/specializations/advanced-data-science-ibm
 
 Сейчас в процессе. Сочетает достаточно глубокое раскрытие одних тем, с весьма обзорным форматом других.
 Из полезного: интересные практические примеры, плюс информация о том, как различные фреймворки использовать в IBM Cloud 
 и Watson Studio.
 
-**IBM Data Science Professional Certificate**
+**IBM Data Science Professional Certificate**  
 https://www.coursera.org/specializations/ibm-data-science-professional-certificate
 
 Специализация будет полезна для новичков. Пара курсов вызвала чувство сожаления, что таких материалов не было когда 
@@ -36,7 +36,7 @@ cognitiveclass.ai, но там сертификат не дают и перез�
 - Data Science Foundations - https://cognitiveclass.ai/learn/data-science/
 - Applied Data Science with Python - https://cognitiveclass.ai/learn/data-science-with-python/
 
-**Deep Learning**
+**Deep Learning**  
 https://cognitiveclass.ai/learn/deep-learning/
 
 Сейчас в процессе. Первые два курса скорее обзорные, но рассматривают разные не столь популярные штуки 
@@ -44,7 +44,7 @@ https://cognitiveclass.ai/learn/deep-learning/
 
 ## Что рекомендуют "собаководы"
 
-**Машинное обучение и анализ данных Specialization**
+**Машинное обучение и анализ данных Specialization**  
 https://www.coursera.org/specializations/machine-learning-data-analysis
 
 В рамках специализации вы освоите основные темы, необходимые в работе с большим массивом данных, 
@@ -56,7 +56,7 @@ https://www.coursera.org/specializations/machine-learning-data-analysis
 Результатом будет наглядная работающая модель, которую вы сможете использовать в вашей повседневной работе или 
 продемонстрировать на собеседовании.
 
-**Advanced Machine Learning Specialization**
+**Advanced Machine Learning Specialization**  
 https://www.coursera.org/specializations/aml
 
 This specialization gives an introduction to deep learning, reinforcement learning, natural language understanding, 
@@ -65,19 +65,19 @@ will share their experience of solving real-world problems and help you to fill 
 Upon completion of 7 courses you will be able to apply modern machine learning methods in enterprise and understand 
 the caveats of real-world data and settings.
 
-**CS231n: Convolutional Neural Networks for Visual Recognition**
+**CS231n: Convolutional Neural Networks for Visual Recognition**  
 http://cs231n.stanford.edu/
 
 Курс Стенфорда по CNN сетям и распознаванию изображений.
 
-**Practical Deep Learning For Coders**
+**Practical Deep Learning For Coders**  
 http://course.fast.ai/
 
 2 курса по Deep Learning.
 
 ## Что еще выглядит интересно
 
-**Machine Learning with TensorFlow on Google Cloud Platform Specialization** 
+**Machine Learning with TensorFlow on Google Cloud Platform Specialization**  
 https://www.coursera.org/specializations/machine-learning-tensorflow-gcp
 
 Learn how to write distributed machine learning models that scale in Tensorflow, scale out the training of those models, 
@@ -88,7 +88,7 @@ knowledge of the theory to solve specific types of ML problems. You will experim
 starting from building an ML-focused strategy and progressing into model training, optimization, and 
 productionalization with hands-on labs using Google Cloud Platform.
 
-**Advanced Machine Learning with TensorFlow on Google Cloud Platform Specialization**
+**Advanced Machine Learning with TensorFlow on Google Cloud Platform Specialization**  
 https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp
 
 This 5-course specialization focuses on advanced machine learning topics using Google Cloud Platform 
@@ -96,3 +96,9 @@ where you will get hands-on experience optimizing, deploying, and scaling produc
 in hands-on labs. This specialization picks up where “Machine Learning on GCP” left off and teaches you 
 how to build scalable, accurate, and production-ready models for structured data, image data, time-series, 
 and natural language text. It ends with a course on building recommendation systems. 
+
+**Reinforcement learning - OpenAI Spinning Up**  
+https://spinningup.openai.com/en/latest/index.html  
+
+This is an educational resource produced by OpenAI that makes it easier 
+to learn about deep reinforcement learning (deep RL).
