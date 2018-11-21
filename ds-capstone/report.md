@@ -1,4 +1,4 @@
-# Explore Coffee Shops in Minsk, Belarus
+# Explore Locations For Coffee Shops in Minsk, Belarus
 
 ## Introduction
 
