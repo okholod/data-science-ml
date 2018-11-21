@@ -12,6 +12,13 @@ In this research I will focus on choosing a right location for a new coffe shop 
 
 ## Data
 
-I am going to leverage Foursquare as a main source of data in this study. Foursquare is a technology company that built a massive dataset of location data. Currently its location data is the most comprehensive out there, and quite accurate that it powers location data for many popular services like Apple Maps, Uber, Snapchat, Twitter and many others, and is currently being used by over 100,000 developers, and this number is only growing. 
+I am going to leverage Foursquare as a main source of data in this study. Foursquare is a technology company that built a massive dataset of location data. Currently its location data is the most comprehensive out there, and quite accurate that it powers location data for many popular services like Apple Maps, Uber, Snapchat, Twitter and many others, and is currently being used by over 100,000 developers, and this number is only growing.
+
+The Foursquare APIs will be used to extract the following informations:
+* Locations of the existing coffee shops
+* Details for existing coffee shops like number of checkins, number of unique users
+* Locations and categories of substitute venues in *coffee* category
 
 As a part of my analysis I am going to look at neighborhoods in Minsk. There are nine districts in the city, but this devision looks too coarse for our goals. At the same time, location of the post offices is well correlated with the distribution of the population, this information may be extracted from the official post service site: http://belpost.by/branch/post/otdeleniya-sviazi/
+
+The neighborhoods address information will be used to define geographical coordinates using a geocoding service. Later this information will allow us to extract statistics data for every neighborhood using Foursquare APIs. I am going to explore, compare and cluster the neighborhoods to make suggestions on choosing the best locations for a new coffee shops.
