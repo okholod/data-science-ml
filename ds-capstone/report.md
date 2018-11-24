@@ -70,6 +70,8 @@ k-means clustering partitions observations into k clusters in which each observa
 with the nearest mean, serving as a prototype of the cluster. I use algorithm implementation from scikit-learn library.
 
 ## Results
+
+### Neighborhoods Defined
 I started with retrieving neighborhoods in Minsk. There are nine districts in the city, 
 but this division looks too coarse for our goals. At the same time, location of the post offices should be well 
 correlated with the distribution of the population. I extracted this information from the official post service site: 
@@ -83,7 +85,47 @@ the neighborhood centers on the map using Folium.
 
 We can see that our assumption is confirmed and post offices are distributed quite evenly in the residential areas.
 
+### Explore Existing Coffee Shops
 
+!['Coffee Shops in Minsk'](report-images/coffee-shops.png)
+
+### Explore The Neighborhoods
+
+    ----ул. Московская,16, 220001,г. Минск----
+             venue  freq
+    0  Coffee Shop  0.36
+    1         Café  0.27
+    2   Steakhouse  0.09
+    3       Buffet  0.09
+    4  Pizza Place  0.09
+   
+    ----ул. Сторожевская,8, 220002,г. Минск----
+             venue  freq
+    0         Café  0.67
+    1  Coffee Shop  0.33
+    2       Bakery  0.00
+    3   Donut Shop  0.00
+    4   Steakhouse  0.00
+    
+    ----ул. Одинцова, 113, 220003,г. Минск----
+                venue  freq
+    0          Bakery   0.0
+    1             Bar   0.0
+    2      Steakhouse   0.0
+    3   Shopping Mall   0.0
+    4  Sandwich Place   0.0
+    
+!['Neighborhoods per cluster'](report-images/cluster-counts.png)
+
+!['Distributions of venues'](report-images/cluster-venues-dist.png)
+
+So, we can describe our clusters in the following way:
+* Cluster 0 - mixes Cafe and Coffee Shop venues
+* Cluster 1 - most of venues are Cafes
+* Cluster 2 - most of venues are Cofee Shops
+* Cluster 3 - almost missing venues in the categories we looked for
+
+!['Neighborhood clusters on the map'](report-images/cluster-map.png)
 
 ## Discussion
 _Discussion section where you discuss any observations you noted and any recommendations you can make 
