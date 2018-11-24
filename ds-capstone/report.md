@@ -42,7 +42,7 @@ The Foursquare APIs will be used to extract the following informations:
 * Locations and categories of substitute venues in *coffee* category
 
 As a part of my analysis I am going to look at neighborhoods in Minsk. There are nine districts in the city, 
-but this devision looks too coarse for our goals. At the same time, location of the post offices is well correlated 
+but this division looks too coarse for our goals. At the same time, location of the post offices is well correlated 
 with the distribution of the population, this information may be extracted from the official post service site: 
 http://belpost.by/branch/post/otdeleniya-sviazi/
 
@@ -53,12 +53,37 @@ for a new coffee shops.
 
 ## Methodology
 
-_Methodology section which represents the main component of the report where you discuss and describe any exploratory 
-data analysis that you did, any inferential statistical testing that you performed, and what machine learnings 
-were used and why._
+In this study I focus on choosing a right location for a new coffe shop. For this task to find and show relationships, 
+a descriptive approach required. I explore location and statistics for existing coffee shops, and look at 
+existing substitutes.
+
+For data exploration I use Jupyter notebook with code in Python. Numpy and Pandas libraries are used for data 
+manipulation and calculations. Data visualization performed using matplotlib for charts and Folium library for maps.
+
+Machine Learning is a field of study that gives computers the ability to learn without being explicitly programmed. 
+Machine Learning can be used to identify relationships and trends in data that might otherwise not be accessible 
+or identified. For this case, I cluster the neighborhoods to better understand existing relations between coffee shops
+and substitute venues.
+
+I use **k-means clustering** - an unsupervised learning algorithm popular for cluster analysis in data mining. 
+k-means clustering partitions observations into k clusters in which each observation belongs to the cluster 
+with the nearest mean, serving as a prototype of the cluster. I use algorithm implementation from scikit-learn library.
 
 ## Results
-_Results section where you discuss the results._
+I started with retrieving neighborhoods in Minsk. There are nine districts in the city, 
+but this division looks too coarse for our goals. At the same time, location of the post offices should be well 
+correlated with the distribution of the population. I extracted this information from the official post service site: 
+http://belpost.by/branch/post/otdeleniya-sviazi/
+
+The page was scraped using BeautifulSoup library and data loaded into Pandas DataFrame. The neighborhoods address 
+information is used to define geographical coordinates using the Geocoder Python package. On the next step I draw
+the neighborhood centers on the map using Folium.
+
+!['Neighborhoods in Minsk'](report-images/minsk-neighborhoods.png)
+
+We can see that our assumption is confirmed and post offices are distributed quite evenly in the residential areas.
+
+
 
 ## Discussion
 _Discussion section where you discuss any observations you noted and any recommendations you can make 
