@@ -78,16 +78,41 @@ correlated with the distribution of the population. I extracted this information
 http://belpost.by/branch/post/otdeleniya-sviazi/
 
 The page was scraped using BeautifulSoup library and data loaded into Pandas DataFrame. The neighborhoods address 
-information is used to define geographical coordinates using the Geocoder Python package. On the next step I draw
-the neighborhood centers on the map using Folium.
+information is used to define geographical coordinates using the Geocoder Python package. 
 
+        Postalcode	Address	                                Latitude	Longitude
+    0	220001	    ул. Московская,16, 220001,г. Минск	    53.887819	27.538548
+    1	220002	    ул. Сторожевская,8, 220002,г. Минск	    53.914390	27.553282
+    2	220003	    ул. Одинцова, 113, 220003,г. Минск	    53.901167	27.427478
+    3	220004	    ул. М.Танка,36, к.2, 220004,г. Минск	53.903750	27.565430
+    4	220005	    пр. Независимости,46, 220005,г. Минск	53.914125	27.581544
+
+The next picture shows the neighborhood centers on the map using Folium.
 ![Neighborhoods in Minsk](report-images/minsk-neighborhoods.png)
 
 We can see that our assumption is confirmed and post offices are distributed quite evenly in the residential areas.
 
 ### Explore Existing Coffee Shops
+I started analysis with exploring existing coffee shops in the city: using Foursquare Explore API to get list of most 
+popular venues with category ID Coffee Shop - 4bf58dd8d48988d1e0931735. I found that even while specifically 
+setting the category ID, the API returned venues of related types as well. If we filter out all the related categories,
+there is only 57 coffee shops in the results.
+
+I chose a different approach and did search for coffee shops in each neighborhood we have. I look for venues in section 
+*coffee* (that includes coffee shops and related categories) in each neighborhood within radius of 500 meters. 
+After filtering by the venue category the resulting data frame contains 253 venues.
+
+On the map we can clearly see that coffee shops tend to be located in the city business center, 
+along the main transportation routes (main avenues and the metro lines), and in several clusters in residential areas.
 
 ![Coffee Shops in Minsk](report-images/coffee-shops.png)
+
+Unfortunately, beginning on May 31st, Foursquare made some changes: access to check-in counts, visit counts, 
+chain details, and key tastes was removed. I use Foursquare API to collect stats for the existing coffee shops including:
+- *tipCount* (number of tips here)
+- the *price* tier from 1 (least pricey) - 4 (most pricey)
+- numerical *rating* of the venue (0 through 10; not all venues will have a rating)
+- *likes* the count of users who have liked this venue
 
 ### Explore The Neighborhoods
 
@@ -125,6 +150,7 @@ So, we can describe our clusters in the following way:
 * Cluster 2 - most of venues are Cofee Shops
 * Cluster 3 - almost missing venues in the categories we looked for
 
+The next image shows how the clusters distributed on the city map.
 ![Neighborhood clusters on the map](report-images/cluster-map.png)
 
 ## Discussion
