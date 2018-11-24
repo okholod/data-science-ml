@@ -146,7 +146,7 @@ chain details, and key tastes will be removed. So we only may use likes count as
     * Neighborhoods with mix of Cafe and Coffee Shop venues are located in the city center and along the metro lines.
     * Neighborhoods where most of the venues are Cafes located in residential areas, we can see more even distribution in this case.
     * Neighborhoods where Coffee Shops make up the majority of the venues are located near the transport and shopping hubs.
-    * Several neighborhoods located in industrial sub-areas almost don't have venues coffee-related venues.
+    * Several neighborhoods located in industrial sub-areas almost don't have coffee-related venues.
 
 As result of the analysis we may formulate the following recommendations on choosing location for a coffee shop:
 * 
