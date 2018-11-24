@@ -140,8 +140,13 @@ chain details, and key tastes will be removed. So we only may use likes count as
 * We can see quite prominent clusters of the neighborhoods in the city basing on distributions of venue categories
     * Cluster 0 - mixes Cafe and Coffee Shop venues
     * Cluster 1 - most of venues are Cafes
-    * Cluster 2 - most of venues are Cofee Shops
+    * Cluster 2 - most of venues are Coffee Shops
     * Cluster 3 - almost missing venues in the categories we looked for
+* We can see some patterns of how neighborhoods that belongs to different clusters are distributed on the map:
+    * Neighborhoods with mix of Cafe and Coffee Shop venues are located in the city center and along the metro lines.
+    * Neighborhoods where most of the venues are Cafes located in residential areas, we can see more even distribution in this case.
+    * Neighborhoods where Coffee Shops make up the majority of the venues are located near the transport and shopping hubs.
+    * Several neighborhoods located in industrial sub-areas almost don't have venues coffee-related venues.
 
 As result of the analysis we may formulate the following recommendations on choosing location for a coffee shop:
 * 
