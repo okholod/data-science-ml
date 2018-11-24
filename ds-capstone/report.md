@@ -132,7 +132,7 @@ We can see that _count_ is 108, which means that for 13 neighborhoods Foursquare
 nor substitute venues. Maximal number of venues is 34 and median is only 4, just 25% of neighborhoods have more than 10
 venues. In total there are 28 uniques categories in our data frame.
 
-As the next step, we one-hot encode the venue categories, group rows by neighborhood and take the mean of 
+As the next step, we one-hot encoded the venue categories, grouped rows by neighborhood and took the mean of 
 the frequency of occurrence of each category. Now, we can find out what the top 5 most common venues 
 for the first 3 neighborhoods in our data frame are.
 
@@ -164,7 +164,7 @@ It's interesting, that even first three neighborhoods look quite different: the 
 mix of Coffee Shop and Café venues, the second one has almost twice more Cafés than Coffee Shops, 
 and there are no venues at all in the third one.
 
-Let's cluster the neighborhood into 4 clusters using k-means algorithm; we use the frequencies of occurrence 
+I clustered the neighborhood into 4 clusters using k-means algorithm; we use the frequencies of occurrence 
 for each category in neighborhood as features. It looks like we found 4 reasonably sized clusters.
 ![Neighborhoods per cluster](report-images/cluster-counts.png)
 
@@ -190,15 +190,22 @@ routes (main avenues and the metro lines), and in several clusters in residentia
 * Unfortunately, beginning on May 31st, Foursquare made some changes in order to *'simplify their API and maintain 
 the quality of their service as their developer community grows'*: access to check-in counts, visit counts, 
 chain details, and key tastes will be removed. So we only may use likes count as a measure of venue popularity.
-* We can see quite prominent clusters of the neighborhoods in the city basing on distributions of venue categories
+* We found that for 13 neighborhoods Foursquare does not return any coffee shop nor substitute venues. 
+* Maximal number of venues is 34 and median is only 4, just 25% of neighborhoods have more than 10
+venues. 
+* In total there are 28 uniques categories in our data frame for _coffee_ section in Foursquare API.
+* Clustering with k-means algorithm gives us 4 quite prominent clusters of the neighborhoods in the city 
+basing on distributions of venue categories
     * Cluster 0 - mixes Cafe and Coffee Shop venues
     * Cluster 1 - most of venues are Cafes
     * Cluster 2 - most of venues are Coffee Shops
     * Cluster 3 - almost missing venues in the categories we looked for
 * We can see some patterns of how neighborhoods that belongs to different clusters are distributed on the map:
     * Neighborhoods with mix of Cafe and Coffee Shop venues are located in the city center and along the metro lines.
-    * Neighborhoods where most of the venues are Cafes located in residential areas, we can see more even distribution in this case.
-    * Neighborhoods where Coffee Shops make up the majority of the venues are located near the transport and shopping hubs.
+    * Neighborhoods where most of the venues are Cafes located in residential areas, we can see more 
+    even distribution in this case.
+    * Neighborhoods where Coffee Shops make up the majority of the venues are located near the transport 
+    and shopping hubs.
     * Several neighborhoods located in industrial sub-areas almost don't have coffee-related venues.
 
 As result of the analysis we may formulate the following recommendations on choosing location for a coffee shop:
