@@ -117,7 +117,7 @@ We can see that our assumption is confirmed and post offices are distributed qui
     
 ![Neighborhoods per cluster](report-images/cluster-counts.png)
 
-![Distribution of venues](report-images/cluster-venue-dist.png)
+![Distribution of venues](report-images/cluster-venue-distr.png)
 
 So, we can describe our clusters in the following way:
 * Cluster 0 - mixes Cafe and Coffee Shop venues
