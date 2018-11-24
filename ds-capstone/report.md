@@ -80,12 +80,12 @@ http://belpost.by/branch/post/otdeleniya-sviazi/
 The page was scraped using BeautifulSoup library and data loaded into Pandas DataFrame. The neighborhoods address 
 information is used to define geographical coordinates using the Geocoder Python package. 
 
-        Postalcode	Address	                                Latitude	Longitude
+        Postalcode	    Address	                            Latitude    Longitude
     0	220001	    ул. Московская,16, 220001,г. Минск	    53.887819	27.538548
     1	220002	    ул. Сторожевская,8, 220002,г. Минск	    53.914390	27.553282
     2	220003	    ул. Одинцова, 113, 220003,г. Минск	    53.901167	27.427478
-    3	220004	    ул. М.Танка,36, к.2, 220004,г. Минск	53.903750	27.565430
-    4	220005	    пр. Независимости,46, 220005,г. Минск	53.914125	27.581544
+    3	220004	    ул. М.Танка,36, к.2, 220004,г. Минск    53.903750	27.565430
+    4	220005	    пр. Независимости,46, 220005,г. Минск   53.914125	27.581544
 
 The next picture shows the neighborhood centers on the map using Folium.
 ![Neighborhoods in Minsk](report-images/minsk-neighborhoods.png)
@@ -116,6 +116,26 @@ chain details, and key tastes was removed. I use Foursquare API to collect stats
 
 ### Explore The Neighborhoods
 
+As the first step I check how many venues have been returned for each neighborhood given the radius of 500 meters 
+and the venue limit of 100. We got the following results of _describe_ operation for our data frame:
+
+    count    108.000000
+    mean       8.000000
+    std        9.086294
+    min        1.000000
+    25%        2.000000
+    50%        4.000000
+    75%       10.250000
+    max       34.000000
+
+We can see that _count_ is 108, which means that for 13 neighborhoods Foursquare does not return any coffee shop 
+nor substitute venues. Maximal number of venues is 34 and median is only 4, just 25% of neighborhoods have more than 10
+venues. In total there are 28 uniques categories in our data frame.
+
+As the next step, we one-hot encode the venue categories, group rows by neighborhood and take the mean of 
+the frequency of occurrence of each category. Now, we can find out what the top 5 most common venues 
+for the first 3 neighborhoods in our data frame are.
+
     ----ул. Московская,16, 220001,г. Минск----
              venue  freq
     0  Coffee Shop  0.36
@@ -140,8 +160,15 @@ chain details, and key tastes was removed. I use Foursquare API to collect stats
     3   Shopping Mall   0.0
     4  Sandwich Place   0.0
     
+It's interesting, that even first three neighborhoods look quite different: the first one shows approximately equal 
+mix of Coffee Shop and Café venues, the second one has almost twice more Cafés than Coffee Shops, 
+and there are no venues at all in the third one.
+
+Let's cluster the neighborhood into 4 clusters using k-means algorithm; we use the frequencies of occurrence 
+for each category in neighborhood as features. It looks like we found 4 reasonably sized clusters.
 ![Neighborhoods per cluster](report-images/cluster-counts.png)
 
+The next picture shows mean values for frequencies of venue categories in our clusters.
 ![Distribution of venues](report-images/cluster-venue-distr.png)
 
 So, we can describe our clusters in the following way:
