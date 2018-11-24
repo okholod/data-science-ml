@@ -25,7 +25,7 @@ donut shops – or any fast food place that serves coffee.
 Even, if you are franchising or buying an existing business the location is pre-selected but you should still do your 
 research and decide whether the existing or selected location is a good one.
 
-In this research I will focus on choosing a right location for a new coffe shop in Minsk, Belarus. 
+In this research I will focus on choosing a right location for a new coffee shop in Minsk, Belarus. 
 I am going to analyze location statistics for existing coffee shops, indirectly count customers and 
 visits using check-ins, and look at existing substitutes. 
 
@@ -81,13 +81,13 @@ The page was scraped using BeautifulSoup library and data loaded into Pandas Dat
 information is used to define geographical coordinates using the Geocoder Python package. On the next step I draw
 the neighborhood centers on the map using Folium.
 
-!['Neighborhoods in Minsk'](report-images/minsk-neighborhoods.png)
+![Neighborhoods in Minsk](report-images/minsk-neighborhoods.png)
 
 We can see that our assumption is confirmed and post offices are distributed quite evenly in the residential areas.
 
 ### Explore Existing Coffee Shops
 
-!['Coffee Shops in Minsk'](report-images/coffee-shops.png)
+![Coffee Shops in Minsk](report-images/coffee-shops.png)
 
 ### Explore The Neighborhoods
 
@@ -115,9 +115,9 @@ We can see that our assumption is confirmed and post offices are distributed qui
     3   Shopping Mall   0.0
     4  Sandwich Place   0.0
     
-!['Neighborhoods per cluster'](report-images/cluster-counts.png)
+![Neighborhoods per cluster](report-images/cluster-counts.png)
 
-!['Distributions of venues'](report-images/cluster-venues-dist.png)
+![Distribution of venues](report-images/cluster-venue-dist.png)
 
 So, we can describe our clusters in the following way:
 * Cluster 0 - mixes Cafe and Coffee Shop venues
@@ -125,11 +125,26 @@ So, we can describe our clusters in the following way:
 * Cluster 2 - most of venues are Cofee Shops
 * Cluster 3 - almost missing venues in the categories we looked for
 
-!['Neighborhood clusters on the map'](report-images/cluster-map.png)
+![Neighborhood clusters on the map](report-images/cluster-map.png)
 
 ## Discussion
-_Discussion section where you discuss any observations you noted and any recommendations you can make 
-based on the results._
+
+Let's summarize observations made during the analysis:
+* Our assumption that post offices are distributed quite evenly in the residential areas is confirmed. 
+Thus, we can use post offices to divide the city into neighborhoods.
+* We can clearly see that coffee shops tend to be located in the city business center, along the main transportation 
+routes (main avenues and the metro lines), and in several clusters in residential areas.
+* Unfortunately, beginning on May 31st, Foursquare made some changes in order to *'simplify their API and maintain 
+the quality of their service as their developer community grows'*: access to check-in counts, visit counts, 
+chain details, and key tastes will be removed. So we only may use likes count as a measure of venue popularity.
+* We can see quite prominent clusters of the neighborhoods in the city basing on distributions of venue categories
+    * Cluster 0 - mixes Cafe and Coffee Shop venues
+    * Cluster 1 - most of venues are Cafes
+    * Cluster 2 - most of venues are Cofee Shops
+    * Cluster 3 - almost missing venues in the categories we looked for
+
+As result of the analysis we may formulate the following recommendations on choosing location for a coffee shop:
+* 
 
 ## Conclusion
 _Conclusion section where you conclude the report._
