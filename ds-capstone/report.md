@@ -243,6 +243,7 @@ basing on distributions of venue categories
     and shopping hubs.
     * Several neighborhoods located in industrial sub-areas almost don't have coffee-related venues.
 
+### Recommendations
 As result of the analysis we may formulate the following recommendations on choosing location for a coffee shop:
 * We need to choose a location with high traffic. In Minsk it is the city business center, streets along the main 
 transportation routes and the metro lines, and several clusters in residential areas.
