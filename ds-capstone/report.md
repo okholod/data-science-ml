@@ -114,17 +114,34 @@ chain details, and key tastes was removed. I use Foursquare API to collect stats
 - numerical *rating* of the venue (0 through 10; not all venues will have a rating)
 - *likes* the count of users who have liked this venue
 
+#### Price Tiers
+Most coffee shops in Minsk work in low price tier and only 8% work in price tier 2. Most of these more expensive 
+coffee shops located in the city center.
 ![Coffee Shops in Minsk](report-images/price-map.png)
 
+#### Ratings
+I found that around 58% of venues have no rating assigned, it's quite surprising result for me. 
+Most of the rated venues have rating between 6 and 8 points.
 ![Coffee Shops in Minsk](report-images/rating.png)
 
+If we look at the ratings on the city map, we can see that most of high-rated coffee shops are located 
+in the city center and along the main transportation routes.
 ![Coffee Shops in Minsk](report-images/rating-map.png)
 
+#### Likes Count
+If look at the like counts, we can see that 75% of coffee shops has less than 20 likes. At the same time, 
+there are several venues with high count of likes in our data set.
 ![Coffee Shops in Minsk](report-images/likes.png)
 
+Again, the popular coffee shops tend to be located in the city business center and along the main transportation routes 
+(main avenues and the metro lines).
 ![Coffee Shops in Minsk](report-images/likes-map.png)
 
+The most popular coffee are clustered around two locations in the city center.
 ![Coffee Shops in Minsk](report-images/likes-map-center.png)
+
+The **tips count** is highly correlated with number of likes the coffee shops have. We can see very similar histogram and 
+distribution on the city map.
 
 ### Explore The Neighborhoods
 
