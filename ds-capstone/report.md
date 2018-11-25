@@ -53,7 +53,7 @@ for a new coffee shops.
 
 ## Methodology
 
-In this study I focus on choosing a right location for a new coffe shop. For this task to find and show relationships, 
+In this study I focus on choosing a right location for a new coffee shop. For this task to find and show relationships, 
 a descriptive approach required. I explore location and statistics for existing coffee shops, and look at 
 existing substitutes.
 
@@ -219,6 +219,12 @@ routes (main avenues and the metro lines), and in several clusters in residentia
 * Unfortunately, beginning on May 31st, Foursquare made some changes in their API: access to check-in counts, 
 visit counts, chain details, and key tastes will be removed. So we only may use likes count as a measure 
 of venue popularity.
+* Around 58% of venues have no rating assigned, most of the rated venues have rating between 6 and 8 points.
+* Only 8% work in price tier 2; most of these more expensive coffee shops located in the city center.
+* 75% of coffee shops has less than 20 likes. At the same time, there are several venues with high count of likes.
+* The popular coffee shops tend to be located in the city business center and along the main transportation routes 
+(main avenues and the metro lines).
+* The most popular coffee are clustered around two locations in the city center.
 * We found that for 13 neighborhoods Foursquare does not return any coffee shop nor substitute venues. 
 * Maximal number of venues is 34 and median is only 4, just 25% of neighborhoods have more than 10
 venues. 
@@ -238,7 +244,25 @@ basing on distributions of venue categories
     * Several neighborhoods located in industrial sub-areas almost don't have coffee-related venues.
 
 As result of the analysis we may formulate the following recommendations on choosing location for a coffee shop:
-* 
+* We need to choose a location with high traffic. In Minsk it is the city business center, streets along the main 
+transportation routes and the metro lines, and several clusters in residential areas.
+* We need to choose a location within the city center for a coffee shop with pricing above tier 1.
+* The most popular coffee are clustered around two locations in the city center. However, we must take into account 
+the high level of competition in these highly attractive areas.
+* Neighborhoods with mix of Cafe and Coffee Shop venues are located in the city center and along the metro lines. 
+In these areas, competition is very high, moreover, coffee shops have to compete with cafes and other substitute venues.
+* In residential areas coffee shops are less popular than cafes. It seems more risky to open a new coffee shop 
+in these neighborhoods.
+* Neighborhoods where Coffee Shops make up the majority of the venues are located near the transport and shopping hubs. 
+It may make sense to position new coffee shop as a place to socialize: to meet friends, for informal meetings, 
+or for students to catch up on schoolwork in these areas, since we cannot see pressure from cafes in this areas.
+* There 13 neighborhoods with no coffee shop nor substitute venues at all; these areas do not look promising.
 
 ## Conclusion
-_Conclusion section where you conclude the report._
+The goal was to look for a location for a new coffee shop in Minsk, Belarus. I analyzed location and statistics data
+for existing coffee shops retrieved using Foursquare APIs _explore_ function. I also explored, compared and grouped 
+the neighborhoods into clusters using the k-means clustering algorithm. Four distinctive clusters were found and 
+it was easy to interpret them.
+
+I think this study gave us some valuable results and ideas on how to choose the right location for a coffee shop 
+in Minsk.
