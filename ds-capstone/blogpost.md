@@ -144,8 +144,7 @@ mix of Coffee Shop and Café venues, the second one has almost twice more Cafés
 and there are no venues at all in the third one.
 
 I clustered the neighborhood into 4 clusters using k-means algorithm; the frequencies of occurrence 
-for each category in neighborhood used as features. And we got 4 reasonably sized clusters.
-![Neighborhoods per cluster](report-images/cluster-counts.png)
+for each category in neighborhood used as features, and we got 4 reasonably sized clusters.
 
 The next picture shows mean values for frequencies of venue categories in our clusters.
 ![Distribution of venues](report-images/cluster-venue-distr.png)
@@ -179,3 +178,5 @@ or for students to catch up on schoolwork in these areas, since we cannot see pr
 We saw how Foursquare APIs _explore_ function is used to analyze location and statistics data for existing coffee shops 
 and substitutes. We also explored, compared and grouped the neighborhoods into clusters using the k-means 
 clustering algorithm.
+
+Jupyter notebook with code for this post is available on [GitHub](https://github.com/okholod/data-science-ml/tree/master/ds-capstone).
