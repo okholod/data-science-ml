@@ -114,6 +114,18 @@ chain details, and key tastes was removed. I use Foursquare API to collect stats
 - numerical *rating* of the venue (0 through 10; not all venues will have a rating)
 - *likes* the count of users who have liked this venue
 
+![Coffee Shops in Minsk](report-images/price-map.png)
+
+![Coffee Shops in Minsk](report-images/rating.png)
+
+![Coffee Shops in Minsk](report-images/rating-map.png)
+
+![Coffee Shops in Minsk](report-images/likes.png)
+
+![Coffee Shops in Minsk](report-images/likes-map.png)
+
+![Coffee Shops in Minsk](report-images/likes-map-center.png)
+
 ### Explore The Neighborhoods
 
 As the first step I check how many venues have been returned for each neighborhood given the radius of 500 meters 
@@ -164,8 +176,8 @@ It's interesting, that even first three neighborhoods look quite different: the 
 mix of Coffee Shop and Café venues, the second one has almost twice more Cafés than Coffee Shops, 
 and there are no venues at all in the third one.
 
-I clustered the neighborhood into 4 clusters using k-means algorithm; we use the frequencies of occurrence 
-for each category in neighborhood as features. It looks like we found 4 reasonably sized clusters.
+I clustered the neighborhood into 4 clusters using k-means algorithm; the frequencies of occurrence 
+for each category in neighborhood used as features. And we got 4 reasonably sized clusters.
 ![Neighborhoods per cluster](report-images/cluster-counts.png)
 
 The next picture shows mean values for frequencies of venue categories in our clusters.
@@ -187,9 +199,9 @@ Let's summarize observations made during the analysis:
 Thus, we can use post offices to divide the city into neighborhoods.
 * We can clearly see that coffee shops tend to be located in the city business center, along the main transportation 
 routes (main avenues and the metro lines), and in several clusters in residential areas.
-* Unfortunately, beginning on May 31st, Foursquare made some changes in order to *'simplify their API and maintain 
-the quality of their service as their developer community grows'*: access to check-in counts, visit counts, 
-chain details, and key tastes will be removed. So we only may use likes count as a measure of venue popularity.
+* Unfortunately, beginning on May 31st, Foursquare made some changes in their API: access to check-in counts, 
+visit counts, chain details, and key tastes will be removed. So we only may use likes count as a measure 
+of venue popularity.
 * We found that for 13 neighborhoods Foursquare does not return any coffee shop nor substitute venues. 
 * Maximal number of venues is 34 and median is only 4, just 25% of neighborhoods have more than 10
 venues. 
