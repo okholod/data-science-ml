@@ -79,17 +79,13 @@ coffee shops located in the city center.
 ![Coffee Shops in Minsk](report-images/price-map.png)
 
 I found that around 58% of venues have no rating assigned, it's quite surprising result for me. 
-Most of the rated venues have rating between 6 and 8 points.
-![Coffee Shops in Minsk](report-images/rating.png)
-
-If we look at the ratings on the city map, we can see that most of high-rated coffee shops are located 
+Most of the rated venues have rating between 6 and 8 points. If we look at the ratings on the city map, 
+we can see that most of high-rated coffee shops are located 
 in the city center and along the main transportation routes.
 ![Coffee Shops in Minsk](report-images/rating-map.png)
 
 If look at the like counts, we can see that 75% of coffee shops has less than 20 likes. At the same time, 
-there are several venues with high count of likes in our data set.
-![Coffee Shops in Minsk](report-images/likes.png)
-
+there are several venues with high count of likes in our data set. 
 Again, the popular coffee shops tend to be located in the city business center and along the main transportation routes 
 (main avenues and the metro lines). The most popular coffee are clustered around two locations in the city center.
 ![Coffee Shops in Minsk](report-images/likes-map-center.png)
