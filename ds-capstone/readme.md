@@ -24,6 +24,6 @@ The final deliverables of the project will be:
 
 In this research I focus on choosing a right location for a new coffeу shop in Minsk, Belarus. I analyzed location statistics for existing coffee shops, its price tiers, popularity, and looked at existing substitutes.
 
-1. The notebook showing the code - [Coffee Shops in Minsk.ipynb](#/Coffee_Shops_in_Minsk.ipynb)
-2. The report - [report.md](#/report.md)
-3. The "blogpost" - [blogpost.md](#/blogpost.md)
+1. The notebook showing the code - [Coffee Shops in Minsk.ipynb](Coffee_Shops_in_Minsk.ipynb)
+2. The report - [report.md](report.md)
+3. The "blogpost" - [blogpost.md](blogpost.md)
