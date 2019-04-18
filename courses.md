@@ -38,6 +38,11 @@ https://cognitiveclass.ai/learn/deep-learning/
 
 Первые два курса скорее обзорные, но рассматривают разные не столь популярные штуки как Deep Belief Network или Restricted Boltzmann Machine.
 
+**Machine Learning with TensorFlow on Google Cloud Platform Specialization**  
+https://www.coursera.org/specializations/machine-learning-tensorflow-gcp
+
+Курс вводный, но тоже был интересен темами по месту machin learning в бизнесе и работе с features. Ну и, разумеется, дает представление о том, как же все "это" делать на GCP. Лабораторные работы интересны по содержанию, но не заданиями - такое ощущение, что сначала были сделаны ноутбуки что-то демонстрирующие, а потом из них выбросили куски кода. Не слишком интересно "заполнять пробелы". В специализации от Andrew Ng задания гораздо более увлекательные.
+
 ## Что рекомендуют "собаководы"
 
 **Машинное обучение и анализ данных Specialization**  
@@ -72,17 +77,6 @@ http://course.fast.ai/
 2 курса по Deep Learning.
 
 ## Что еще выглядит интересно
-
-**Machine Learning with TensorFlow on Google Cloud Platform Specialization**  
-https://www.coursera.org/specializations/machine-learning-tensorflow-gcp
-
-Learn how to write distributed machine learning models that scale in Tensorflow, scale out the training of those models, 
-and offer high-performance predictions. Convert raw data to features in a way that allows ML to learn 
-important characteristics from the data and bring human insight to bear on the problem. Finally, 
-learn how to incorporate the right mix of parameters that yields accurate, generalized models and 
-knowledge of the theory to solve specific types of ML problems. You will experiment with end-to-end ML, 
-starting from building an ML-focused strategy and progressing into model training, optimization, and 
-productionalization with hands-on labs using Google Cloud Platform.
 
 **Advanced Machine Learning with TensorFlow on Google Cloud Platform Specialization**  
 https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp
