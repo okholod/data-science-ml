@@ -107,7 +107,7 @@ This badge earner has demonstrated proficiency in Machine Learning (ML) and Deep
 
 Complete all courses in the IBM AI Engineering Professional Certificate program on Coursera - https://www.coursera.org/professional-certificates/ai-engineer
 
-** Курс Deep Learning (2019-2020): базовый поток**
+**Курс Deep Learning (2019-2020): базовый поток**
 https://stepik.org/course/57839/promo
 
 Базовый поток предназначен для тех, кто не уверен в своих знаниях по математике и программированию. На базовом потоке мы уделим больше внимания основам высшей математики и изучению языка Python: и то, и другое необходимо для изучения нейросетей.
