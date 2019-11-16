@@ -92,3 +92,17 @@ https://spinningup.openai.com/en/latest/index.html
 
 This is an educational resource produced by OpenAI that makes it easier 
 to learn about deep reinforcement learning (deep RL).
+
+**IBM Applied AI Professional Certificate**
+https://www.youracclaim.com/org/ibm/badge/ibm-applied-ai-professional-certificate
+
+This badge earner has a firm understanding of AI, its applications and use cases, and is familiar with IBM Watson AI services and APIs. They can create AI driven chatbots and have gained practical Python skills to work with AI. They can use IBM Watson AI services and APIs to design, build & deploy AI-powered applications on the web. They are proficient in applying AI and building AI solutions.
+
+Complete all courses in the IBM Applied AI Professional Certificate program on Coursera - https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai
+
+**IBM AI Engineering Professional Certificate**
+https://www.youracclaim.com/org/ibm/badge/ibm-ai-engineering-professional-certificate
+
+This badge earner has demonstrated proficiency in Machine Learning (ML) and Deep Learning (DL). The earner understands various ML techniques such as regression, classification, clustering & recommender systems and is able to scale ML on Big Data using Apache Spark. The earner is able to build, test & deploy DL models using libraries such as Keras, PyTorch & Tensorflow. The earner has completed several ML & DL projects and is now armed with skills for starting a career in AI Engineering.
+
+Complete all courses in the IBM AI Engineering Professional Certificate program on Coursera - https://www.coursera.org/professional-certificates/ai-engineer
